@@ -1,0 +1,611 @@
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* navigation - 1 */
+.nav1 {
+    background-color: #0F1111;
+    font-family: sans-serif;
+    height: 60px;
+    width: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* || Styling individual boxes of nav-1 */
+
+/* box-1 */
+.nav1-box1 {
+    display: block;
+    width: 114.729px;
+    height: 49px;
+}
+.logo_img {
+    width: 100%;
+}
+
+/* box-2 */
+.nav1-box2 {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.nav1-box2 .loc-icon {
+    margin-top: 12px;
+}
+.nav1-box2 .line1 {
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+}
+.nav1-box2 .line2 {
+    color: rgb(255,255,255);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* box-3 */
+.nav1-box3 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.nav1 .nav1-box3:hover {
+    cursor: auto;
+    border: none;
+}
+.nav-select {
+    width: 47px;
+    height: 40px;
+    background-color: rgb(230, 230, 230);
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px 0 0 6px;
+    border-color: white;
+    outline: none;
+}
+.nav-search {
+    width: 30vw;
+    height: 40px;
+    border-radius: 0px;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+}
+.box3-icon {
+    background-color: #f8ca75;
+    font-size: smaller;
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    outline: none;
+}
+.box3-icon:hover {
+    cursor: pointer;
+    background-color: #eeb54a;
+}
+
+/* box-4 */
+.nav1-box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+    padding: 0.8rem;
+}
+.box4-flag {
+    width: 22px;
+    height: 16px;
+    display: block;
+    border-radius: 2px;
+}
+.box4-select {
+    background-color: #0F1111;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+/* box-5 */
+.nav1-box5 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.box5-top {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.box5-select {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+.box5-select:hover {
+    cursor: pointer;
+}
+
+/* box-6 */
+.nav1-box6 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: center;
+    color: white;
+    padding: 0.5rem;
+}
+.box6-top {
+    font-size: 12px;
+    font-weight: 400;
+}
+.box6-bottom {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* box-7 */
+.nav1-box7 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.box7-right {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* All nav1 boxes */
+.box:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+/* navigation - 2 */
+.nav2 {
+    background-color: rgb(35, 47, 62);
+    width: 100%;
+    height: 39px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+    z-index: 0;
+    margin-top: 60px;
+}
+
+.nav2-menu-icon {
+    font-size: large;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.nav2-box {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 8px 4.5px 11.5px 4.5px;
+    border: 1.2px solid rgb(35, 47, 62);
+}
+
+.nav2-box:hover {
+    cursor: pointer;
+    border-color: white;
+    border-radius: 2px;
+}
+
+/* main section */
+main{
+    background-image: linear-gradient(to top, rgb(50, 212, 240),whitesmoke);
+    /* background-color: rgb(50, 212, 240); */
+    height: 1320px;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.back-content {
+    width: 100%;
+    background-color: papayawhip;
+    background-image: url(img/amzn-backrnd3.jpg);
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.back-link {
+    width: 100%;
+    display: block;
+    padding-bottom: 240px;
+}
+
+/* Shopping items - Grid */
+
+
+.shop-items1 {
+    /* margin-inline: 20px; */
+    /* margin-left: 30px; */
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    row-gap: 30px;
+    column-gap: 25px;
+    position: absolute;
+    top: 295px;
+    margin-left: 25px;
+    max-width: 100%;
+}
+
+.signin-box {
+    background-color: whitesmoke;
+    width: 280px;
+    height: 140px;
+    box-shadow: 0px 0px 3px #333;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 7px;
+}
+.phone-box {
+    background-color: whitesmoke;
+    width: 280px;
+    height: 250px;
+    margin-inline: auto;
+    box-shadow: 0px 0px 3px #333;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+main .shop-items1 .item:nth-child(4) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.shop-items1 .item {
+    background-color: whitesmoke;
+    width: 280px;
+    height: 400px;
+    box-shadow: 0px 0px 3px #333;
+    border-radius: 4px;
+}
+
+/* inside the items */
+
+/* 4th ITEM */
+.signin-box .first {
+    font-size: 16px;
+    font-weight: 700;
+    margin-inline: 55px;
+}
+.signin-box .second {
+    display: block;
+    background-color: orange;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.phone-box .first {
+    display: block;
+    width: 100%;
+    height: 80%;
+    padding: 5px 10px;
+}
+.phone-box .second {
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: inherit;
+    color:  rgb(0, 113, 133);
+}
+.phone-box:hover {
+    cursor: pointer;
+}
+
+/* ------ inside of each common box  */
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+}
+
+.item .second-part .img-box img {
+    display: block;
+    width: 110px;
+    height: 100px;
+}
+
+.item .first-part {
+    color: rgb(15, 17, 17);
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.item .second-part {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    row-gap: 1rem;
+    place-content: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.item .third-part {
+    color: rgb(0, 113, 133);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.img-box p {
+    color: rgb(15, 17, 17);
+    font-size: 12px;
+    color: inherit;
+}
+
+/* On hover */
+.item .img-box:hover {
+    cursor: pointer;
+    color: #ea690e;
+}
+.item .third-part:hover {
+    cursor: pointer;
+    color: #ea690e;
+    text-decoration: underline;
+}
+
+.item:nth-child(5) {
+   gap: 0.5rem;
+}
+.item:nth-child(7) {
+    gap: 0.7rem;
+}
+.item:nth-child(8) {
+    gap: 0.9rem;
+ }
+
+ /* ------- main sign-in */
+.main-sign-in {
+    width: 100%;
+    height: 120px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 8px;
+    padding: 30px;
+    border-top: 5px solid orange;
+}
+
+.main-sign-in .first {
+    font-size: 15px;
+    color: rgb(0,0,0);
+}
+.main-sign-in .second {
+    color: rgb(0,0,0);
+    font-size: 13px;
+    font-weight: 700;
+    background-color: orange;
+    padding: 10px 100px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.main-sign-in .third {
+    font-size: 13px;
+    color: rgb(0,0,0);
+}
+.main-sign-in .third a {
+    text-decoration: none;
+}
+.main-sign-in .third a:hover {
+    color: #ea690e;
+}
+
+/* ------------- Footer ----------- */
+footer {
+    width: 100%;
+    height: 500px;
+}
+.back-to-top {
+    display: block;
+    background-color: rgb(73, 98, 127);
+    /* background-color: rgb(73, 98, 127); */
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.back-to-top:hover {
+    background-color: rgb(100, 140, 184);
+}
+
+/* Footer - content */
+.footer-content {
+    background-color: rgb(35, 47, 62);
+    color: white;
+    width: 100%;
+}
+.all-details {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8rem;
+    margin-inline: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.foot-box h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.foot-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.foot-box ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+.foot-box ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(221, 221, 221);
+}
+.nav-footer-line {
+    border-top-color: rgb(58, 69, 83);
+    border-top-style: solid;
+    border-top-width: 0.999999px;
+    color: rgb(15, 17, 17);
+}
+
+.location-section {
+    height: 220px;
+    margin-top: 20px;
+    /* max-width: 100%; */
+}
+
+.location-section .first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.location-section .first img {
+    width: 1105x;
+    height: 45px;
+    display: block;
+}
+.location-section .first select {
+    padding: 10px 20px;
+    background-color: inherit;
+    color: whitesmoke;
+    border-width: 3px;
+}
+.location-section .second{
+    margin-top: 30px;
+    margin-inline: auto;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    row-gap: 3px;
+}
+.location-section .second li a {
+    font-size: 12px;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+.location-section .second li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(221, 221, 221);
+}
+.location-section .third {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Making it responsive (trying)*/
+@media only screen and (max-width: 480px) {
+    .shop-items1 {
+      grid-template-columns: 1fr;
+    }
+    .shop-items1 .item {
+      width: 100%;
+      height: auto;
+    }
+    .shop-items1 .item .first-part {
+      font-size: 14px;
+    }
+    .shop-items1 .item .second-part .img-box img {
+      width: 60px;
+      height: 60px;
+    }
+  }
